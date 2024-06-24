@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация и Вход</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div id="register-form" class="form active">
+        <h2 class="regist">Регистрация</h2>
+        <form id="register">
+            <label class="regist-mail" for="register-email">Email</label>
+            <input type="email" id="register-email" placeholder="Введите email" required>
+            <label class="regist-pass" for="register-password">Пароль</label>
+            <input type="password" id="register-password" placeholder="Введите пароль" required>
+            <label class="sub-newsletter">
+                <input type="checkbox" id="subscribe-newsletter" required>
+                Я согласен получать обновления на почту
+            </label>
+            <button class="sub" type="submit">Зарегистрироваться</button>
+            <a href="#" id="switch-to-login">Войти</a>
+        </form>
+    </div>
+
+    <div id="login-form" class="form">
+        <h2 class="login">Вход</h2>
+        <form id="login">
+            <label class="log-mail" for="login-email">Email</label>
+            <input type="email" id="login-email" placeholder="Введите email" required>
+            <label class="log-password" for="login-password">Пароль</label>
+            <input type="password" id="login-password" placeholder="Введите пароль" required>
+            <button class="sub" type="submit">Войти</button>
+            <a href="#" id="switch-to-register">Зарегистрироваться</a>
+        </form>
+    </div>
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>

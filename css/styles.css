@@ -1,0 +1,180 @@
+/* Сброс стилей */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Глобальные стили */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1B2473;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+
+.form {
+  display: none;
+}
+
+.form.active {
+  display: block;
+}
+
+.regist, .login {
+  font-size: 50px;
+  font-weight: 700;
+  color: #787878;
+  text-align: center;
+  padding: 30px 150px;
+}
+
+#switch-to-login,
+#switch-to-register {
+  right: 2%;
+  top: 4%;
+  position: absolute;
+  color: #1A226B;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#register,
+#login{
+  display: flex;
+  flex-direction: column;
+}
+
+.regist-mail, .regist-pass,
+.log-mail, .log-password {
+  font-size: 16px;
+  font-weight: 700;
+  color: #787878;
+  padding-left: 53px;
+  position: relative;
+}
+
+.regist-mail::after, .regist-pass::after, .log-mail::after, .log-password::after {
+  content: "*";
+  color: #787878;
+  position: absolute;
+  left: 34px;
+  top: 25px;
+}
+
+#register-email,
+#register-password,
+#login-email,
+#login-password {
+  margin: 3px 45px 14px 45px;
+  padding: 7px 15px;
+  border: 2px solid #787878;
+  border-radius: 10px;
+  font-size: 28px;
+}
+
+.sub-newsletter {
+  display: block; 
+  font-size: 14px;
+  font-weight: 400;
+  color: #787878;
+  margin: 0 45px 14px;
+  position: relative; 
+}
+
+.sub-newsletter::after {
+  content: "*";
+  position: absolute;
+  left: -11px;
+  top: -2px;
+}
+
+
+#subscribe-newsletter {
+  margin-right: 10px;
+  border: 2px solid #787878;
+  border-radius: 7px;
+}
+
+.sub{
+  margin: 25px 210px;
+  background-color: #1A226B;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.error {
+  border: 2px solid red;
+  color: red;
+}
+
+.label-error, .label-error::after {
+  color: red;
+ 
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  padding-left: 53px;
+  display: none;
+}
